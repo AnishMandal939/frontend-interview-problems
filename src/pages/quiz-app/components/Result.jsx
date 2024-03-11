@@ -13,7 +13,7 @@ export default function Result({
       <p>
         You answered {correctAnswers} out of {questions?.length} questions
       </p>
-      <Button onClick={resetQuiz}>Reset Quiz</Button>
+      <Button className="clear_btn" onClick={resetQuiz}>Reset Quiz</Button>
       <ul>
         {questions?.map((question, index) => {
           return (
