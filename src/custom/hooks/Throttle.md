@@ -1,0 +1,21 @@
+Throttle: 
+    Basic example: infinite loading of page: when we reach max height set by user, we load more data and that fetches more data from server by hitting an API.
+       -- platform: web(youtube, google search, facebook, twitter, etc)
+         -- use case: infinite scrolling
+         -- platform: mobile
+            -- use case: infinite scrolling
+    - use case: 
+        - infinite scrolling
+        - search bar
+        - drag and drop
+        - resize
+        - window resize - here in this example we've made use of it to throttle the window resize event
+        - mouse move
+        - mouse click
+        - mouse double click
+        - mouse right click
+        - mouse left click
+        - mouse middle click
+        - mouse wheel
+        - mouse enter
+        - mouse leave
