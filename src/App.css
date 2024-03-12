@@ -80,3 +80,57 @@
   border-radius: 5px;
   cursor: pointer;
 }
+
+/* styles for stepper */
+.stepper{
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.step{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.step-number{
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: #ccc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 5px;
+  z-index: 2;
+}
+.step-name{
+  font-size: 14px;
+}
+
+/* dynamic stepper */
+.active .step-number{
+  background-color: #007bff;
+  color: white;
+}
+.complete .step-number{
+  background-color: #4caf50;
+  color: white;
+}
+
+
+.progress-bar{
+  position: absolute;
+  top: 25%;
+  left: 0;
+  height: 4px;
+  background-color: #ccc;
+  /* width: 100%; */
+}
+
+.progress{
+  height: 100%;
+  background-color: #4caf50;
+  transition: 0.2s ease;
+}
